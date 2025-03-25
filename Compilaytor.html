@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Онлайн Компилятор</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Онлайн Компилятор</h1>
+        <textarea id="code" placeholder="Введите ваш код здесь..."></textarea>
+        <button id="run">Запустить код</button>
+        <h2>Результат:</h2>
+        <pre id="result"></pre>
+    </div>
+    <script>
+        document.getElementById('run').addEventListener('click', function() {
+            const code = document.getElementById('code').value;
+            const resultElement = document.getElementById('result');
+
+            try {
+                const result = eval(code);
+                resultElement.textContent = result;
+            } catch (error) {
+                resultElement.textContent = 'Ошибка: ' + error.message;
+            }
+        });
+    </script>
+</body>
+</html>
