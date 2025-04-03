@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Тест: Какой язык программирования выбрать</title>
+  <link rel="stylesheet" href="style.css">  
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <a href="#" class="logo">THE PYTHONIC WAY</a>
+        <ul>
+          <li><a href="https://skillfactory.ru/courses/programmirovanie#courses">Курсы</a></li>
+          <li><a href="https://skillfactory.ru/courses/programmirovanie#intensives">О нас</a></li>
+          <li><a href="https://skillfactory.ru/contacts">Контакты</a></li>
+          <li><a href="https://skillfactory.ru/free-events">Бесплатно</a></li>
+          <li><a href="https://skillfactory.ru/courses/programmirovanie#form" class="button">Оставить заявку</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  
+  <section class="test-section">
+    <div class="container">
+      <h1>Тест: Какой язык программирования выбрать</h1>
+      <p>Пройдите наш тест и узнайте, какой язык программирования вам подойдет лучше всего!</p>
+      <form id="programming-test">
+        <div class="question">
+          <p>1. Какую сферу вас интересует больше всего?</p>
+          <label><input type="radio" name="interest" value="Web Development"> Веб-разработка</label>
+          <label><input type="radio" name="interest" value="Data Science"> Научные вычисления и анализ данных</label>
+          <label><input type="radio" name="interest" value="Game Development"> Разработка игр</label>
+          <label><input type="radio" name="interest" value="Mobile Development"> Мобильная разработка</label>
+        </div>
+        <div class="question">
+            <p>2. Какой ваш уровень подготовки в программировании?</p>
+            <label><input type="radio" name="experience" value="Beginner"> Начинающий</label>
+            <label><input type="radio" name="experience" value="Intermediate"> Средний</label>
+            <label><input type="radio" name="experience" value="Advanced"> Продвинутый</label>
+        </div>
+        
+        <div class="question">
+          <p>3. Какой тип проектов вам интересен?</p>
+          <label><input type="radio" name="project_type" value="Personal Projects"> Личные проекты</label>
+          <label><input type="radio" name="project_type" value="Freelance"> Фриланс</label>
+          <label><input type="radio" name="project_type" value="Corporate"> Корпоративные проекты</label>
+        </div>
+        
+        <div class="question">
+          <p>4. Какой стиль обучения вам больше подходит?</p>
+          <label><input type="radio" name="learning_style" value="Self-paced"> Самостоятельное изучение</label>
+          <label><input type="radio" name="learning_style" value="Structured"> Структурированные курсы</label>
+          <label><input type="radio" name="learning_style" value="Mentorship"> Обучение с наставником</label>
+        </div>
+        
+        <div class="question">
+          <p>5. Какую роль вы хотите занимать в будущем?</p>
+          <label><input type="radio" name="future_role" value="Developer"> Разработчик</label>
+          <label><input type="radio" name="future_role" value="Data Analyst"> Аналитик данных</label>
+          <label><input type="radio" name="future_role" value="Project Manager"> Менеджер проектов</label>
+          <label><input type="radio" name="future_role" value="Designer"> Дизайнер</label>
+        </div>
+        
+        <div class="question">
+          <p>6. Какие технологии вас больше всего интересуют?</p>
+          <label><input type="checkbox" name="technologies" value="Python"> Python</label>
+          <label><input type="checkbox" name="technologies" value="JavaScript"> JavaScript</label>
+          <label><input type="checkbox" name="technologies" value="Java"> Java</label>
+          <label><input type="checkbox" name="technologies" value="C#"> C#</label>
+          <label><input type="checkbox" name="technologies" value="Ruby"> Ruby</label>
+        </div>          
+        <button type="submit" class="button">Узнать результат</button>
+      </form>
+      <div id="result" style="display:none; margin-top: 20px;"></div>
+    </div>
+  </section>
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-column">
+          <h3>THE PYTHONIC WAY</h3>
+          <p>Python – базовый, один из самых популярных и востребованных языков программирования. Выучить его несложно: синтаксис схож с английским, есть много библиотек с готовыми кодами.</p>
+          <div class="subscribe-form">
+            <input type="email" placeholder="Ваш email">
+            <button type="submit">Go →</button>
+          </div>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-tiktok"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-column">
+          <h3>НАШИ КУРСЫ</h3>
+          <ul>
+            <li><a href="#">Программирование</a></li>
+            <li><a href="#">Data Science</a></li>
+            <li><a href="#">Аналитика данных</a></li>
+            <li><a href="#">Маркетинг</a></li>
+            <li><a href="#">Дизайн</a></li>
+            <li><a href="#">Менеджмент</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3>КУРСЫ ДЛЯ СТАРТА</h3>
+          <ul>
+            <li><a href="#">Программирование</a></li>
+            <li><a href="#">Data Science</a></li>
+            <li><a href="#">Аналитика данных</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <img src="6eccbb89-70f5-4292-bfb0-01446cfc004c.png" alt="Иллюстрация ноутбука" style="max-width: 100%;">
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2025 THE PYTHONIC WAY. Все права защищены.</p>
+        <button class="request-button" onclick="window.location.href='https://skillfactory.ru/courses/programmirovanie#form'">Оставить заявку</button>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('programming-test').onsubmit = function(event) {
+      event.preventDefault();
+
+      let result = '';
+      const interest = document.querySelector('input[name="interest"]:checked');
+      const experience = document.querySelector('input[name="experience"]:checked');
+      const projectType = document.querySelector('input[name="project_type"]:checked');
+      const learningStyle = document.querySelector('input[name="learning_style"]:checked');
+      const futureRole = document.querySelector('input[name="future_role"]:checked');
+
+      if (interest && futureRole) {
+        if (interest.value === "Web Development" && futureRole.value === "Developer") {
+          result = "Вам подойдет профессия Веб-разработчика!";
+        } else if (interest.value === "Data Science" && futureRole.value === "Data Analyst") {
+          result = "Вам подойдет профессия Аналитика данных!";
+        } else if (interest.value === "Game Development" && futureRole.value === "Developer") {
+          result = "Вам подойдет профессия Разработчика игр!";
+        } else if (interest.value === "Mobile Development" && futureRole.value === "Developer") {
+          result = "Вам подойдет профессия Мобильного разработчика!";
+        } else {
+          result = "Выберите комбинацию, чтобы узнать подходящую профессию!";
+        }
+      } else {
+        result = "Пожалуйста, ответьте на все вопросы.";
+      }
+      
+      document.getElementById('result').innerText = result;
+      document.getElementById('result').style.display = 'block';
+    };
+  </script>
+</body>
+</html>
